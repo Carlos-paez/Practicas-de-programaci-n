@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registro de Trabajador</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 20px;
+        }
+
+        .form-container {
+            background-color: #ffffff;
+            padding: 25px;
+            border: 1px solid #ccc;
+            border-radius: 8px;
+            max-width: 500px;
+            width: 100%;
+        }
+
+        fieldset {
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            padding: 20px;
+        }
+
+        legend {
+            font-weight: bold;
+            padding: 0 10px;
+            font-size: 1.2em;
+        }
+
+        .form-group {
+            margin-bottom: 15px;
+        }
+
+        label {
+            display: inline-block;
+            margin-bottom: 5px;
+            font-weight: bold;
+            width: 150px;
+        }
+        
+        input[type="text"],
+        input[type="email"],
+        input[type="date"],
+        select,
+        textarea {
+            width: calc(100% - 160px);
+            padding: 8px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            box-sizing: border-box;
+        }
+
+        textarea {
+            height: 100px;
+            resize: vertical;
+        }
+
+        .options-group label {
+            width: auto;
+            font-weight: normal;
+            margin-right: 15px;
+        }
+
+        .button-group {
+            text-align: left;
+            margin-top: 20px;
+        }
+
+        input[type="submit"],
+        input[type="reset"] {
+            padding: 10px 15px;
+            border: 1px solid #ccc;
+            background-color: #f0f0f0;
+            border-radius: 4px;
+            cursor: pointer;
+            font-weight: bold;
+            margin-right: 10px;
+        }
+
+        input[type="submit"]:hover,
+        input[type="reset"]:hover {
+            background-color: #e0e0e0;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="form-container">
+        <form action="#" method="post">
+            <fieldset>
+                <legend>REGISTRO DEL TRABAJADOR</legend>
+
+                <div class="form-group">
+                    <label for="cedula">Cedula:</label>
+                    <input type="text" id="cedula" name="cedula">
+                </div>
+
+                <div class="form-group">
+                    <label for="nombre">Nombre:</label>
+                    <input type="text" id="nombre" name="nombre">
+                </div>
+
+                <div class="form-group">
+                    <label for="apellido">Apellido:</label>
+                    <input type="text" id="apellido" name="apellido">
+                </div>
+                
+                <div class="form-group">
+                    <label for="correo">Correo:</label>
+                    <input type="email" id="correo" name="correo">
+                </div>
+
+                <div class="form-group">
+                    <label for="fecha_nacimiento">Fecha de Nacimiento:</label>
+                    <input type="date" id="fecha_nacimiento" name="fecha_nacimiento">
+                </div>
+
+                <div class="form-group options-group">
+                    <label>Sexo:</label>
+                    <input type="radio" id="femenino" name="sexo" value="femenino">
+                    <label for="femenino">Femenino</label>
+                    <input type="radio" id="masculino" name="sexo" value="masculino">
+                    <label for="masculino">Masculino</label>
+                </div>
+
+                <div class="form-group options-group">
+                    <label>Nivel de Estudios:</label><br>
+                    <input type="checkbox" id="universitario" name="estudios" value="universitario">
+                    <label for="universitario">Universitario</label><br>
+                    <input type="checkbox" id="tecnico" name="estudios" value="tecnico">
+                    <label for="tecnico">Tecnico</label><br>
+                    <input type="checkbox" id="no-tiene" name="estudios" value="no-tiene">
+                    <label for="no-tiene">No tiene</label>
+                </div>
+                
+                <div class="form-group">
+                    <label for="lugar_nacimiento">Lugar de Nacimiento:</label>
+                    <select id="lugar_nacimiento" name="lugar_nacimiento">
+                        <option value="Barquisimeto" selected>Barquisimeto</option>
+                        <option value="Caracas">Caracas</option>
+                        <option value="Valencia">Valencia</option>
+                        <option value="Maracaibo">Maracaibo</option>
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <label for="habilidades">Destrezas y Habilidades:</label>
+                    <textarea id="habilidades" name="habilidades"></textarea>
+                </div>
+
+                <div class="form-group">
+                    <label for="cv">Ingresa tu CV:</label>
+                    <input type="file" id="cv" name="cv">
+                </div>
+                
+                <div class="form-group">
+                    <label for="foto">Foto:</label>
+                    <input type="file" id="foto" name="foto">
+                </div>
+
+                <div class="button-group">
+                    <input type="submit" value="Registrar Trabajador">
+                    <input type="reset" value="Borrar">
+                </div>
+            </fieldset>
+        </form>
+    </div>
+
+</body>
+</html>

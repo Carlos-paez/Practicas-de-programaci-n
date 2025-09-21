@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Horario de Clases</title>
+<style>
+  body {
+    font-family: sans-serif;
+    padding: 20px;
+  }
+  table {
+    width: 100%;
+    border-collapse: collapse;
+    border: 2px solid black;
+  }
+  th, td {
+    border: 1px solid black;
+    text-align: center;
+    padding: 10px;
+    font-weight: bold;
+  }
+  .header-principal {
+    background-color: #F7F700;
+  }
+  .header-secundario {
+    color: white;
+    background-color: #009933;
+  }
+</style>
+</head>
+<body>
+
+<h1>Horario Matutino</h1>
+
+<table border="1">
+  <thead>
+    <tr>
+      <th class="header-principal">Matituno</th>
+      <th colspan="5" class="header-principal">Dias de Semana</th>
+    </tr>
+    <tr>
+      <th class="header-secundario">Hora</th>
+      <th class="header-secundario">Lunes</th>
+      <th class="header-secundario">Martes</th>
+      <th class="header-secundario">Miércoles</th>
+      <th class="header-secundario">Jueves</th>
+      <th class="header-secundario">Viernes</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td class="header-secundario">8:00 - 9:00</td>
+      <td rowspan="2">Matematica</td>
+      <td rowspan="2">Geografia</td>
+      <td rowspan="2">Ingles</td>
+      <td rowspan="2">Fisica</td>
+      <td>Biologia</td>
+    </tr>
+    <tr>
+      <td class="header-secundario">9:00 - 10:00</td>
+      <td>Deporte</td>
+    </tr>
+    <tr>
+      <td class="header-secundario">10:00 - 11:00</td>
+      <td rowspan="2">Fisica</td>
+      <td rowspan="2">Ingles</td>
+      <td rowspan="2">Matematicas</td>
+      <td>Biologia</td>
+      <td rowspan="2">Geografia</td>
+    </tr>
+    <tr>
+      <td class="header-secundario">11:00 - 12:00</td>
+      <td>Deporte</td>
+    </tr>
+    <tr>
+      <td class="header-secundario">12:00 - 1:00</td>
+      <td>Deporte</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+  </tbody>
+</table>
+
+</body>
+</html>
