@@ -1,0 +1,21 @@
+body{
+	text-align: center;
+	background-color: darkcyan;
+	font: sans-serif;
+}
+
+header{
+	padding: 1rem;
+	font: sans-serif;
+	background-color: black;
+	color: white;
+}
+
+div {
+    padding: 1rem;
+    font-size: 2rem;
+    color: white;
+    background-color: #333;
+    width: fit-content;
+    margin: 0 auto;
+}
